@@ -1,6 +1,6 @@
 ---------------------------
 Boom Recorder/X32 Name Sync
-v1.0
+v1.1
 ---------------------------
 
 
@@ -8,7 +8,8 @@ v1.0
 Description:
 ------------
 
-This Applescript synchronizes track names from Boom Recorder to a networked Behringer X32 mixer. Editing a track name in Boom Recorder should be reflected in real-time on the X32.
+This Applescript continually synchronizes track names from Boom Recorder to a networked Behringer X32 mixer. Editing a track name in Boom Recorder should be reflected in real-time on the X32.
+
 
 ------
 Usage:
@@ -27,11 +28,16 @@ To use, you will initially need to make some edits to the .plist file:
 Additionally, the Python script that handles OSC commands requires a library not installed on OSX by default. This library can be installed manually (search for "pyOSC") or automated using the "install_libraries" Applescript included.
 
 
+------
+Fixes:
+------
+
+- 2/18/16 - Improved character handling. Bad characters are defined in the script and replaced with an underscore.
+
+
 -----------
 Known Bugs:
 -----------
-
-- Track names in Boom Recorder that contain parentheses will cause an error in the script. This will be addressed in newer versions but for now avoid special characters as much as possible.
 
 
 --------
@@ -44,4 +50,4 @@ Copyright (C) 2002 Daniel Holth, Clinton McChesney
 Will Colding
 Gotham Sound and Communications
 willc@gothamsound.com
-2/17/16
+2/18/16
