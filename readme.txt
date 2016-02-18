@@ -32,7 +32,8 @@ Additionally, the Python script that handles OSC commands requires a library not
 Fixes:
 ------
 
-- 2/18/16 - Improved character handling. Bad characters are defined in the script and replaced with an underscore.
+	v1.1
+	- Improved character handling. Bad characters are defined in the script and replaced with an underscore.
 
 
 -----------
